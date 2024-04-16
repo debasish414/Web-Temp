@@ -1,0 +1,382 @@
+@media only screen and (max-width: 1000px) {
+    .navbar {
+        font-size: 0.8rem;
+        height: 10vh;
+    }
+
+    .nav-logo {
+        height: 95%;
+        width: 20%;
+    }
+
+    .logo {
+        height: 100%;
+        width: 10vh;
+    }
+
+    .nav-contact,
+    .contact {
+        padding: 3px;
+    }
+
+    .account {
+        padding: 0;
+    }
+
+    .account i,
+    .contact i {
+        font-size: 1rem;
+    }
+
+    .cart i {
+        font-size: 1.5rem;
+    }
+
+    .ver img {
+        height: 7.7vh;
+    }
+
+    .ver h3 {
+        padding: 10px 0px;
+        font-size: 1rem;
+    }
+
+    .ver p {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    .navbar {
+        font-size: 0.6rem;
+        height: 8vh;
+    }
+
+    .nav-logo {
+        height: 95%;
+        width: 15%;
+    }
+
+    .logo {
+        height: 100%;
+        width: 8vh;
+    }
+
+    .account i,
+    .contact i {
+        font-size: 0.8rem;
+    }
+
+    .search-opn {
+        width: 37px;
+    }
+
+    .cart i {
+        font-size: 1.2rem;
+    }
+
+    .variety {
+        display: inline;
+    }
+
+    .manu-list li a {
+        padding: 0px 13px;
+        font-size: 1rem;
+    }
+
+    .men-box {
+        margin: 5px;
+    }
+
+    .foot-line1 {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .foot-line2 {
+        flex-direction: column;
+    }
+
+    footer {
+        height: 344px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .manu-list li a {
+        padding: 0px 10px;
+    }
+
+    .manubar {
+        flex-direction: column;
+        height: 80px;
+    }
+
+    .manu-list {
+        margin-top: 7px;
+    }
+
+    .foot-line2 p {
+        text-align: center;
+    }
+
+    .nav-search {
+        height: 34px;
+    }
+
+    .raw h3 {
+        font-size: 14px;
+    }
+
+    .search-icon i {
+        height: 34px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .navbar {
+        font-size: 0.2rem;
+        height: 9vh;
+    }
+
+    .nav-search {
+        height: 24px;
+    }
+
+    .nav-logo {
+        width: 21%;
+    }
+
+    .logo {
+        width: 8vh;
+    }
+
+    .search-icon i {
+        font-size: 1rem;
+        height: 24px;
+    }
+
+    .raw h3 {
+        font-size: 11px;
+    }
+
+    .account p {
+        font-size: 0.6rem;
+    }
+
+    .nav-contact,
+    .contact {
+        padding: 1px;
+        font-size: 0.5rem;
+        font-weight: bold;
+    }
+
+    .homeSection section h2 {
+        font-size: 1rem;
+    }
+
+    .homeSection section p {
+        font-size: 0.8rem;
+    }
+
+    .foot-line1 {
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    footer {
+        height: 344px;
+    }
+
+    .foot-line2 {
+        font-size: 0.6rem;
+    }
+}
+
+/* *********** Service Section **************** */
+
+@media only screen and (max-width: 700px) {
+    .firstService {
+        grid-template-columns: auto;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .thirdServices {
+        grid-template-columns: auto;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+}
+
+/* *********** Product Section **************** */
+
+@media only screen and (max-width: 1000px) {
+    .productContainer {
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .productContainer {
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .productContainer {
+        grid-template-columns: auto;
+        grid-gap: 20px;
+    }
+}
+
+/* *********** About Section **************** */
+@media only screen and (max-width: 1080px){
+    .rating{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .aboutSection {
+        grid-template-columns: auto;
+    }
+
+    .aboutSecImg img {
+        width: 100%;
+    }
+
+    .about {
+        background-color: #00000029;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .contactUs {
+        grid-template-columns: auto;
+    }
+
+    .ourinfo {
+        text-align: center;
+    }
+
+    .contactRow {
+        grid-template-columns: auto;
+    }
+
+}
+
+/* *********** Create acccount Section **************** */
+
+@media only screen and (max-width: 700px) {
+    .manu-list li a {
+        padding: 0px 13px;
+        font-size: 1rem;
+    }
+
+    .men-box {
+        margin: 5px;
+    }
+
+    .box-icon i {
+        font-size: 1rem;
+    }
+
+    .create-account h1 {
+        font-size: 1.6rem;
+    }
+
+    .accForm {
+        width: 70%;
+        margin-left: -27px;
+    }
+
+    .formControl {
+        margin: 10px auto;
+    }
+
+    .foot-line2 {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .manu-list li a {
+        padding: 0px 10px;
+    }
+
+    .manubar {
+        flex-direction: column;
+        height: 65px;
+    }
+
+    .manu-list {
+        margin-top: 7px;
+    }
+
+    .createAccount h1 {
+        font-size: 1.4rem;
+    }
+
+    .foot-line2 p {
+        text-align: center;
+    }
+}
+
+/* *********** Login Section **************** */
+
+@media only screen and (max-width: 700px) {
+    .manu-list li a {
+        padding: 0px 13px;
+        font-size: 1rem;
+    }
+
+    .men-box {
+        margin: 5px;
+    }
+
+    .box-icon i {
+        font-size: 1rem;
+    }
+
+    .create-account h1 {
+        font-size: 1.6rem;
+    }
+
+    .foot-line2 {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .manu-list li a {
+        padding: 0px 10px;
+    }
+
+    .manubar {
+        flex-direction: column;
+        height: 65px;
+    }
+
+    .form-control {
+        width: 150%;
+    }
+
+    .btn-primary {
+        width: 38%;
+    }
+
+    .manu-list {
+        margin-top: 7px;
+    }
+
+    .foot-line2 p {
+        text-align: center;
+    }
+}
