@@ -65,7 +65,7 @@ export default function About() {
                         {[1, 2, 3, 4, 5].map((starIndex) => (
                             <span
                                 key={starIndex}
-                                className={starIndex <= rating ? 'star filled' : 'star'} // Add 'filled' class to filled stars
+                                className={starIndex <= rating ? 'star filled' : 'star'}
                                 onClick={() => handleRating(starIndex)}
                             >
                                 <i className="fa-solid fa-star star"></i>
