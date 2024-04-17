@@ -1,15 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import bg3 from './IMAGE/bg3.jpg'
 import bg4 from './IMAGE/bg4.jpg'
 
 export default function About() {
+    const [rating, setRating] = useState(0)
+
+    const handleRating = (starIndex) => {
+        setRating(starIndex)
+    }
     return (
         <div className="aboutContainer"><br />
             <div className="aboutSection">
 
                 <div className="about">
-                    <h2 style={{margin: '10px 0px'}}><u>About Us</u></h2>
+                    <h2 style={{ margin: '10px 0px' }}><u>About Us</u></h2>
                     <p>From wide varieties of seeds, to a complete range of pesticides and fertilizers, we go a long way in
                         improving the quality of farmer's lives. We, Grain Agrotech located in Malad West, Mumbai,
                         Maharashtra,
@@ -20,13 +25,13 @@ export default function About() {
                 </div>
                 <div className="aboutSecImg">
                     <Link>
-                    <img src={bg3} alt="" />
+                        <img src={bg3} alt="" />
                     </Link>
                 </div>
             </div>
             <h2 className="center"><u>Contact us</u></h2>
             <div className="aboutSection height">
-                <div className="contactUs" style={{backgroundImage: `url(${bg4})`}}>
+                <div className="contactUs" style={{ backgroundImage: `url(${bg4})` }}>
                     <h3 className="ourinfo"><u>Our information</u></h3>
                     <div className="contactRow">
                         <div className="deta">
@@ -52,16 +57,20 @@ export default function About() {
                     <input type="text" className="inp1 mar-1" name="name" placeholder="Name*" /><br />
                     <input type="number" className="inp1 mar-1" name="contact" placeholder="Contact No*" /><br />
                     <input type="email" className="inp2 mar-1" name="Email" placeholder="Email Id*" /><br />
-                    <textarea name="subject" style={{height: '100px', paddingTop: '10px'}}  className="inp3 mar-1"
+                    <textarea name="subject" style={{ height: '100px', paddingTop: '10px' }} className="inp3 mar-1"
                         placeholder="Your Message*"></textarea><br />
 
                     <div className="rating">
                         <p>Share your rating with us :</p>
-                        <i className="fa-solid fa-star star"></i>
-                        <i className="fa-solid fa-star star"></i>
-                        <i className="fa-solid fa-star star"></i>
-                        <i className="fa-solid fa-star star"></i>
-                        <i className="fa-solid fa-star star"></i>
+                        {[1, 2, 3, 4, 5].map((starIndex) => (
+                            <span
+                                key={starIndex}
+                                className={starIndex <= rating ? 'star filled' : 'star'} // Add 'filled' class to filled stars
+                                onClick={() => handleRating(starIndex)}
+                            >
+                                <i className="fa-solid fa-star star"></i>
+                            </span>
+                        ))}
                     </div>
 
                     <button className="btn">Submit</button>
