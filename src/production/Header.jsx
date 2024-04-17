@@ -49,7 +49,7 @@ function Header() {
                         </div>
                         <div className="account border">
                             <i className="fa-solid fa-user-plus"></i>
-                            <p><NavLink to='/createaccount'>Create Account</NavLink></p>
+                            <p><NavLink to='/account'>Create Account</NavLink></p>
                         </div>
                     </div>
                     <div className="nav-cart">
