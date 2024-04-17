@@ -19,7 +19,7 @@ export default function Login() {
           <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
         </div>
         <button type="submit" className="btn-primary hover">Submit</button>
-        <p>Don’t have an account?<NavLink to='/createaccount'>Join</NavLink></p>
+        <p>Don’t have an account?<NavLink to='/account'>Join</NavLink></p>
       </form>
     </div>
   )
