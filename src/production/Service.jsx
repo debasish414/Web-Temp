@@ -1,4 +1,13 @@
-import React from 'react'
+import React from "react"
+import { Link } from "react-router-dom"
+import service1 from './IMAGE/service1.jpg'
+import service2 from './IMAGE/service2.jpg'
+import service3 from './IMAGE/service3.jpg'
+import service4 from './IMAGE/service4.jpg'
+import sr1 from './IMAGE/sr1.png'
+import sr2 from './IMAGE/sr2.png'
+import sr3 from './IMAGE/sr3.png'
+import sr4 from './IMAGE/sr4.png'
 
 export default function Service() {
   return (
@@ -6,26 +15,34 @@ export default function Service() {
     <h1 className="center"><u>Our Services</u></h1>
     <div className="firstService side">
         <div className="services">
-            <img src="/IMAGE/service1.jpg" alt="CROP PROTECTION" width="600" height="400"/>
+            <Link>
+            <img src={service1} alt="CROP PROTECTION" width="600" height="400"/>
+            </Link>
             <h3 className="serv-para">CROP PROTECTION</h3>
             <p className="serv-para">Accusantium doloremque laudantium, totam rem aperiam, eaqipsa quae ab illo
                 inventore veritatis et
                 quasi.</p>
         </div>
         <div className="services">
-            <img src="/IMAGE/service2.jpg" alt="GROWING PLANTS IN GREENHOUSES" width="600" height="400"/>
+            <Link>
+            <img src={service2} alt="GROWING PLANTS IN GREENHOUSES" width="600" height="400"/>
+            </Link>
             <h3 className="serv-para">GROWING PLANTS IN GREENHOUSES</h3>
             <p className="serv-para">Accusantium doloremque laudantium, totam rem aperiam, eaqipsa quae.</p>
         </div>
         <div className="services">
-            <img src="/IMAGE/service3.jpg" alt="SEED TREATMENT" width="600" height="400"/>
+            <Link>
+            <img src={service3} alt="SEED TREATMENT" width="600" height="400"/>
+            </Link>
             <h3 className="serv-para">SEED TREATMENT</h3>
             <p className="serv-para">Accusantium doloremque laudantium, totam rem aperiam, eaqipsa quae ab illo
                 inventore veritatis et
                 quasi.</p>
         </div>
         <div className="services">
-            <img src="/IMAGE/service4.jpg" alt="COMPANY DISTRIBUTION" width="600" height="400"/>
+            <Link>
+            <img src={service4} alt="COMPANY DISTRIBUTION" width="600" height="400"/>
+            </Link>
             <h3 className="serv-para">COMPANY DISTRIBUTION</h3>
             <p className="serv-para">Accusantium doloremque laudantium, totam rem aperiam, eaqipsa quae ab illo
                 inventore veritatis et
@@ -47,7 +64,9 @@ export default function Service() {
     <div className="thirdServices">
         <div className="flex">
             <div className="img">
-                <img src="/IMAGE/sr1.png" alt=""/>
+                <Link>
+                <img src={sr1} alt=""/>
+                </Link>
             </div>
             <div className="cont">
                 <p className="red">Doloremque laudantium totam rem</p>
@@ -56,7 +75,9 @@ export default function Service() {
         </div>
         <div className="flex">
             <div className="img">
-                <img src="/IMAGE/sr3.png" alt=""/>
+                <Link>
+                <img src={sr3} alt=""/>
+                </Link>
             </div>
             <div className="cont">
                 <p className="red">Doloremque laudantium totam rem</p>
@@ -64,8 +85,10 @@ export default function Service() {
             </div>
         </div>
         <div className="flex">
-            <div className="img" style="margin-right: 14px;">
-                <img src="/IMAGE/sr2.png" alt=""/>
+            <div className="img" >
+                <Link>
+                <img src={sr2} alt=""/>
+                </Link>
             </div>
             <div className="cont">
                 <p className="red">Doloremque laudantium totam rem</p>
@@ -73,8 +96,10 @@ export default function Service() {
             </div>
         </div>
         <div className="flex">
-            <div className="img" style="margin-right: 14px;">
-                <img src="/IMAGE/sr4.png" alt=""/>
+            <div className="img" >
+                <Link>
+                <img src={sr4} alt=""/>
+                </Link>
             </div>
             <div className="cont">
                 <p className="red">Doloremque laudantium totam rem</p>

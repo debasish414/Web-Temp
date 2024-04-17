@@ -98,9 +98,9 @@
         flex-direction: column;
     }
 
-    footer {
+    /* footer {
         height: 344px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 500px) {
@@ -131,6 +131,9 @@
 
     .search-icon i {
         height: 34px;
+    }
+    .homeSection section{
+        padding: 5px;
     }
 }
 
@@ -361,7 +364,7 @@
 
     .manubar {
         flex-direction: column;
-        height: 65px;
+        height: 90px;
     }
 
     .form-control {

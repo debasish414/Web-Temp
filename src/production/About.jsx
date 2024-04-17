@@ -1,4 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import bg3 from './IMAGE/bg3.jpg'
+import bg4 from './IMAGE/bg4.jpg'
 
 export default function About() {
     return (
@@ -6,7 +9,7 @@ export default function About() {
             <div className="aboutSection">
 
                 <div className="about">
-                    <h2>About Us</h2>
+                    <h2 style={{margin: '10px 0px'}}><u>About Us</u></h2>
                     <p>From wide varieties of seeds, to a complete range of pesticides and fertilizers, we go a long way in
                         improving the quality of farmer's lives. We, Grain Agrotech located in Malad West, Mumbai,
                         Maharashtra,
@@ -16,13 +19,15 @@ export default function About() {
                         growth regulators.</p>
                 </div>
                 <div className="aboutSecImg">
-                    <img src="/IMAGE/bg3.jpg" alt="" />
+                    <Link>
+                    <img src={bg3} alt="" />
+                    </Link>
                 </div>
             </div>
-            <h2 className="center">Contact us</h2>
+            <h2 className="center"><u>Contact us</u></h2>
             <div className="aboutSection height">
-                <div className="contactUs">
-                    <h3 className="ourinfo">Our information</h3>
+                <div className="contactUs" style={{backgroundImage: `url(${bg4})`}}>
+                    <h3 className="ourinfo"><u>Our information</u></h3>
                     <div className="contactRow">
                         <div className="deta">
                             <h4 className="center">Shop Addres</h4>
@@ -43,11 +48,11 @@ export default function About() {
                     </div>
                 </div>
                 <div className="enquiry">
-                    <h4 className="center">Enquiry Form</h4>
+                    <h4 className="center"><u>Enquiry Form</u></h4>
                     <input type="text" className="inp1 mar-1" name="name" placeholder="Name*" /><br />
                     <input type="number" className="inp1 mar-1" name="contact" placeholder="Contact No*" /><br />
                     <input type="email" className="inp2 mar-1" name="Email" placeholder="Email Id*" /><br />
-                    <textarea name="subject" style="height: 100px; padding-top: 10px;" className="inp3 mar-1"
+                    <textarea name="subject" style={{height: '100px', paddingTop: '10px'}}  className="inp3 mar-1"
                         placeholder="Your Message*"></textarea><br />
 
                     <div className="rating">

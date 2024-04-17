@@ -10,35 +10,46 @@ import Home from './production/Home.jsx'
 import Service from './production/Service.jsx'
 import Product from './production/Product.jsx'
 import About from './production/About.jsx'
+import Login from './production/Account/Login.jsx'
+import CreateAccount from './production/Account/CreateAccount.jsx'
 
 const router = createBrowserRouter([
   {
-    path : '/',
-    element: <Layout/>,
+    path: '/',
+    element: <Layout />,
     children: [
       {
         path: "",
-        element: <Service/>
+        element: <Home />
       },
       {
         path: "Service",
-        element: <Home/>
+        element: <Service />
       },
       {
         path: "Product",
-        element: <Product/>
+        element: <Product />
       },
       {
         path: "About",
-        element: <About/>
+        element: <About />
       },
-      
+      {
+        path: "login",
+        element: <Login />
+      },
+      {
+        path: "createaccount",
+        element: <CreateAccount />
+      },
+
     ]
   }
 ])
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-<RouterProvider router={router} />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )
