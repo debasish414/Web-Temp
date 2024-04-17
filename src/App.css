@@ -522,9 +522,9 @@ footer {
 .star{
   margin-left: 8px;
 }
-.star-u{
+.star:hover,
+.filled {
   color: #ffb600;
-  margin-left: 8px;
 }
 
 .btn {
