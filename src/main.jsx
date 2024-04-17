@@ -6,6 +6,7 @@ import './App.css'
 import './Responsive.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Layout from './Layout.jsx'
+import AccLayout from './AccLayout.jsx'
 import Home from './production/Home.jsx'
 import Service from './production/Service.jsx'
 import Product from './production/Product.jsx'
@@ -33,16 +34,21 @@ const router = createBrowserRouter([
       {
         path: "About",
         element: <About />
-      },
+      }
+      
+    ]
+  },{
+  path: '/',
+  element: <AccLayout/>,
+  children: [
       {
         path: "login",
-        element: <Login />
+        element: <Login/>
       },
       {
-        path: "createaccount",
-        element: <CreateAccount />
+        path: "account",
+        element: <CreateAccount/>
       },
-
     ]
   }
 ])
