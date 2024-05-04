@@ -21,8 +21,10 @@ function Header() {
                             <p>+91-1234567890</p>
                         </div>
                         <div className="contact border">
-                            <i className="fa-solid fa-map-location"></i>
-                            <p>Address</p>
+                            <a style={{ color: 'black', textDecoration: 'none' }} className=' contact border' href="https://www.google.com/maps/place/Bhubaneswar,+Odisha/@20.3011291,85.6556361,11z/data=!3m1!4b1!4m6!3m5!1s0x3a1909d2d5170aa5:0xfc580e2b68b33fa8!8m2!3d20.2960587!4d85.8245398!16zL20vMDNjenFz?authuser=0&entry=ttu" target='_blanck'>
+                                <i className="fa-solid fa-map-location"></i>
+                                <p>Address</p>
+                            </a>
                         </div>
                     </div>
                     <div className="nav-search hov">
